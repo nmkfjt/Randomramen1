@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <ImageView
+        android:id="@+id/imageramenbar"
+        android:layout_width="409dp"
+        android:layout_height="91dp"
+        android:layout_marginTop="24dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ramenbar" />
+
+    <TextView
+        android:id="@+id/textramen"
+        android:layout_width="245dp"
+        android:layout_height="50dp"
+        android:text="今日のラーメン"
+        android:textSize="34sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageramenbar"
+        app:layout_constraintVertical_bias="0.061" />
+
+    <Button
+        android:id="@+id/startbutton"
+        android:layout_width="144dp"
+        android:layout_height="85dp"
+        android:shadowColor="#FF5722"
+        android:text="START"
+        android:textColorHighlight="#FF5722"
+        android:textColorHint="#FF5722"
+        android:textColorLink="#FF5722"
+        android:textSize="24sp"
+        app:backgroundTint="#FF5722"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView5"
+        app:layout_constraintVertical_bias="0.036"
+        app:rippleColor="#F44336"
+        app:strokeColor="#FF5722" />
+
+    <ImageView
+        android:id="@+id/imageramenbar2"
+        android:layout_width="409dp"
+        android:layout_height="91dp"
+        android:layout_marginBottom="4dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/startbutton"
+        app:layout_constraintVertical_bias="0.76"
+        app:srcCompat="@drawable/ramenbar" />
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="221dp"
+        android:layout_height="236dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textramen"
+        app:layout_constraintVertical_bias="0.031"
+        app:srcCompat="@drawable/ramennoodle" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
